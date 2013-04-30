@@ -1,0 +1,21 @@
+This is a code which performs formation control and rendezvous for a given number of agents. The code uses the algorithm that is given in the book for each of the individual tasks and uses a time adaptive differential equation solver to solve it. To run the code, please execute main.m. All the other codes are dependencies and will be called by main. The different codes in this folder are listed below with a small description of each code. 
+
+1. Main - This is the main code which is used the run both rondevouz and formation control analysis. We've also added the code to convert the simulation into a movie.
+ It'll take somewhat around 15 minutes complete. After that's cpmplete type this into your matlab command window:
+ >> movie2avi(final_movie(1:round(end/2)),path_to_save_in,'compression','None','fps',25);
+2. g_laplacian - Gives the graph laplacian for any weighted adjacency matrix A
+3. get_adjacence - This function evaluates the adjacency matrix for a given position set and sensing radius
+4. get_vertex_coordinates - This code calculates the coordinates of the vertices of a regular n sided polygon
+5. random_graph - This function generates a random connected graph within a given scatter radius
+6. X_dot_formation - This is the code which returns the derivative of the state vector x used for formation control 
+7. X_dot_rendezvous - This is the code which returns the derivative of the state vector x used for rendezvous
+8. plot_trajectory - This is the code which plots the trajectories of all the agents
+9. plot_time_grab - This is the code which plots the time grabs of all the agent trajectories
+
+CODED BY: Ankit Shah, Avnish Kumar, Giri Prashant
+EMAIL: ankitshah91@gmail.com, avnish.10.chd@gmail.com, prashant7891@gmail.com
+
+
+
+
+
